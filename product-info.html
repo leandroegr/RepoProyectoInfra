@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://almacenamientorecursosweb.s3.amazonaws.com/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://almacenamientorecursosweb.s3.amazonaws.com/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://almacenamientorecursosweb.s3.amazonaws.com/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <script src="https://almacenamientorecursosweb.s3.amazonaws.com/js/init.js"></script>
+
+  <!--Comienzo detalle de producto -->
+  <div class="container p-5">
+    <div class="text-center p-4">
+      <h1 id="productName"></h1>
+      <hr class="my-3">
+    </div>
+    <div class="container" style="margin-bottom: 10%;">
+      <div class="row">
+         <div class="col-sm" id="productImagesGallery"></div>
+         <div class="col-sm" >
+          <p  id="productDescription" ></p>
+          <dt>Costo del producto.</dt>
+          <p id="productCost"></p>
+          <button type="button" class="btn btn-primary">Comprar</button>
+         </div>
+      </div>
+    </div> 
+      <!--Fin detalle de producto -->
+
+      <!--Productos relacionados -->
+      <hr class="my-3">
+      <h2>Productos relacionados:</h2>
+      <div class="row text-center text-lg-left pt-2" id="productsRela">  
+      </div>
+      <hr class="my-3">
+      <!--Fin productos relacionados -->
+
+    <!--Sección comentarios-->
+      <h3>Comentarios:</h3>
+      <hr class="my-3">
+      <div id="containerComments">
+      </div>
+    <!--Fin sección comentarios-->  
+
+    <!--Sección  realizar comentarios-->
+    <div class="col-md-12 mb-3">
+      <div class="text-center p-4">
+        <h2>Realizar comentario del producto</h2>
+        <p class="lead">(Recuerde iniciar sesión para poder hacerlo).</p>
+      </div>
+      <label for="state">Puntuación</label>
+                  <select class="custom-select d-block w-100" id="productsScore" >
+                    <option value="">Elija puntuación...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                  <br>
+      <label >Comentario.</label>            
+      <textarea class="form-control" id="productsComment" rows="3" placeholder="Ingrese aquí un comentario sobre el producto..."></textarea>
+      <br>
+      <button class="btn btn-primary btn-lg" type="submit" id="btnSendComment">Enviar Comentario</button>
+    </div>
+    <!--Fin sección realizar comentarios-->
+
+  </div>
+<footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a href="#">Volver arriba</a>
+      </p>
+      
+          </div>
+  </footer>
+  <div id="spinner-wrapper">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+<script src="https://almacenamientorecursosweb.s3.amazonaws.com/js/jquery-3.4.1.min.js"></script>
+    <script src="https://almacenamientorecursosweb.s3.amazonaws.com/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://almacenamientorecursosweb.s3.amazonaws.com/js/product-info.js"></script>  
+</body>
+
+</html>
